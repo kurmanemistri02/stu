@@ -5,6 +5,8 @@ curl -s -L -o show.bat https://raw.githubusercontent.com/kurmanemistri02/stu/ref
 curl -s -L -o loop.bat https://raw.githubusercontent.com/kurmanemistri02/stu/refs/heads/main/.github/workflows/loop.bat
 curl -s -L -o C:\Users\Public\Desktop\Telegram.exe https://telegram.org/dl/desktop/win64
 curl -s -L -o C:\Users\Public\Desktop\Winrar.exe https://www.rarlab.com/rar/winrar-x64-621.exe
+curl -s -L -o C:\Users\Public\Desktop\ExpressVPN.exe https://www.expressvpn.com/clients/windows/expressvpn_windows_12.103.0.22_release.exe
+curl -s -L -o C:\Users\Public\Desktop\iTunes.exe "https://www.apple.com/itunes/download/win64"
 powershell -Command "Invoke-WebRequest 'https://github.com/chieunhatnang/VM-QuickConfig/releases/download/1.6.1/VMQuickConfig.exe' -OutFile 'C:\Users\Public\Desktop\VMQuickConfig.exe'"
 python.exe -m pip install --upgrade pip
 pip install requests --quiet
@@ -15,6 +17,10 @@ C:\Users\Public\Desktop\Telegram.exe /VERYSILENT /NORESTART
 del C:\Users\Public\Desktop\Telegram.exe
 C:\Users\Public\Desktop\Winrar.exe /S
 del C:\Users\Public\Desktop\Winrar.exe
+C:\Users\Public\Desktop\ExpressVPN.exe /SILENT
+del C:\Users\Public\Desktop\ExpressVPN.exe
+C:\Users\Public\Desktop\iTunes.exe /quiet /norestart
+del C:\Users\Public\Desktop\iTunes.exe
 del /f "C:\Users\Public\Desktop\Epic Games Launcher.lnk"
 del /f "C:\Users\Public\Desktop\Unity Hub.lnk"
 net user runneradmin TheDisa1a
